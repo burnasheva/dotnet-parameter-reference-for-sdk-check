@@ -39,6 +39,10 @@ project {
 object Build : BuildType({
     name = "Build"
 
+    params {
+        param("dotnet.version", "6")
+    }
+
     vcs {
         root(HttpsGithubComBurnashevaXunitDotnet6gitRefsHeadsMain)
     }
