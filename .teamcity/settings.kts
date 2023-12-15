@@ -51,12 +51,12 @@ object Build : BuildType({
         dotnetBuild {
             id = "dotnet"
             projects = "XUnitCore.sln"
-            sdk = "6"
+            sdk = "%dotnet.version%"
         }
         dotnetTest {
             id = "dotnet_1"
             projects = "PrimeService.Tests/PrimeService.Tests.csproj"
-            sdk = "6"
+            sdk = "%dotnet.version%"
         }
     }
 
